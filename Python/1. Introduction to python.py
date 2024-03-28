@@ -58,11 +58,11 @@ dis adv - not fastest, less libraries, not easily convertible
 
 Tokens or lexical units    (complete meaningfull units)
 =============================================================
-1. keywords
+1. KEYWORDS
     have special meaning
     for, in, print, range
 
-2. literals
+2. LITERALS
     string
         single line
         multi line
@@ -84,14 +84,14 @@ Tokens or lexical units    (complete meaningfull units)
         tuple
         dict
 
-3. identifiers
+3. IDENTIFIERS
     name of objects
     such as x is indentifier if 
     x = 5
 
-4. operators
-    arithmetic : +-*/%**//
-    bitwise    : &^|
+4. OPERATORS
+    arithmetic : + - * / % ** //
+    bitwise    : & ^ |
     shift      : << >>
     identity   : is   is not
     relational : < <= > >= == !=
@@ -100,8 +100,32 @@ Tokens or lexical units    (complete meaningfull units)
     membership : in not in
     arithmetic-assignment : += -= /= *= %= **= //=
 
-5. punctuators
+5. PUNCTUATORS
     ()[]{},.:;'"
+=============================================================
+
+
+
+
+OPERATOR PRECEDENCE
+=============================================================
+**                   |      Exponenent
+~ + -                |      Complement, unary plus and minus
+* / % //             |      Multiply, divide, modulo, floor
++ -                  |      Addition, Subtraction
+>> <<                |      Bitwise shift
+&                    |      Bitwise AND
+^ |                  |      Bitwise XOR and OR
+<= < > >=            |      Comparision
+<> == !=             |      Equality
+= %= /= //= -= +=    |      Arthematic assignment
+is is not            |      identitiy
+in not in            |      Membership
+not or and           |      Logical
+
+
+* All operators move L to R but exponential moves R to L
+* eg :- 2**3**2 = 512, not 64
 =============================================================
 
 
@@ -117,6 +141,26 @@ list     mutable
 tuple    immutable
 dict     mutable
 =============================================================
+
+
+
+
+
+TYPECASTING
+=============================================================
+1. Implicit (automatically by python)
+    a = 3.0       # float
+    b = 9         # int
+    c = a + b     # 12.0 , float
+
+2. Explicit
+    a = 3.0       # float
+    b = 9         # int
+    c = int(a + b)     # 12.0 , int
+=============================================================
+
+
+
 
 
 Loops
@@ -173,8 +217,6 @@ statistics
 
 
 
-
-
 Debugging
 Errors
     compile time error
@@ -186,8 +228,15 @@ Errors
 
 
 
-
-
+FLOW OF CONTROL
+=============================================================
+1. Conditional Statements
+    1.1 if
+    1.2 if else
+    1.3 if elif else
+2. Looping Statements
+    2.1 For 
+    2.2 While
 
 
 
