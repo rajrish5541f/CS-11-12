@@ -18,6 +18,8 @@
 
 
 
+
+
 # write a program to input time in seconds and output in minutes and seconds
 
 # t = input("Enter time in seconds here: ")
@@ -27,6 +29,10 @@
 # print('The time is :', minutes, 'minutes', seconds, 'seconds.')
 
 
+
+
+
+# write a program to input str and output no of uppercase, lowercase, alphabets, digits
 st = input('Enter string : ')
 u=l=a=d=0
 for ch in st:
