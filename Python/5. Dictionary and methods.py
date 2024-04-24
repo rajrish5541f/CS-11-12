@@ -9,8 +9,8 @@ my_name_indict = {'fname':'raj', 'mname':'rishi', 'lname':'rana'}
 
 print('len         : ', len(my_name_indict))
 # dict() is used to typecast into dictionary
-dict_keys = my_name_indict.keys()
-print(dict_keys)
+dict_keyss = my_name_indict.keys()
+print(dict_keyss)
 print(my_name_indict.values())
 print(my_name_indict.items())
 x = my_name_indict.get('mname')
@@ -56,3 +56,24 @@ print(greatest)
 
 # create a dictionary with names of employees, their salary and access them
 # very very ez
+
+
+
+
+# Create a dictionary whose keys are month names and whose values are number of days in the corresponding months.
+
+
+
+year = {'jan':31, 'feb':28, 'mar':31, 'apr':30, 'may':31, 'jun':30, 'jul':31, 'aug':31, 'sep':30, 'oct':31, 'nov':30, 'dec':31}
+keyss = []
+for i in year:
+    keyss.append(i)
+keyss.sort()
+print('Keys in alphabatical order', keyss)
+for i in year :
+    if (year[i]) == 31:
+        print(year[i])
+byvalue = {}
+print('Key value pairs sorted by keys : ')
+for ke in keyss:
+    print(ke, ':', year[ke])

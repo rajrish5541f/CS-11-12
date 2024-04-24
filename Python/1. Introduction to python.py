@@ -34,7 +34,6 @@ finding the factorial of a positive number, etc
 
 
 
-
 Guido Ron Vassum in 1991
 Monty Python's flying circus
 an object oriented programming lang
@@ -42,16 +41,6 @@ interpreted
 based on ABC and modula-3
 adv - easy to use, completness, open source, cross platform, interpreted, expressive
 dis adv - not fastest, less libraries, not easily convertible
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -237,6 +226,7 @@ FLOW OF CONTROL
 2. Looping Statements
     2.1 For 
     2.2 While
+=============================================================
 
 
 

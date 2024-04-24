@@ -66,3 +66,39 @@ for i in some_nums:
     if i == 2:
         count += 1
 print(count)
+
+
+
+# search the largest word in a list
+list3 = ['good', 'bad', 'sad', 'happy', 'nostalgic', 'depressed', 'motivated']
+dummy = 0
+largestt = []
+indices = []
+for i in (list3):
+    if len(i) > dummy:
+        dummy = len(i)
+for i in range(len(list3)):
+    if len(list3[i]) == dummy:
+        largestt.append(list3[i])
+        indices.append(i)
+if len(indices) == 1:
+    hverb = 'is'
+    noun = 'word'
+else :
+    hverb = 'are'
+    noun = 'words'
+print(f'The largest {noun} {hverb} :')
+for i in range(len(indices)):
+    print(largestt[i], 'at the index', indices[i])
+
+
+
+
+# w.a.p to store fibonacci series in a list
+# 1 1 2 3 5 8 13
+# sum of previous 2 numbers
+l = [1, 1]
+digi = int(input("Upto how many digits you want the series? \n  : "))
+for i in range(digi - len(l)):
+    l.append(l[len(l)-1] + l[len(l)-2])
+print(l)
