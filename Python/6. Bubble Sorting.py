@@ -25,7 +25,7 @@ Min                = 1
 
 '''
 
-
+# method 1
 list1 = [5,3,2,6,4,1,8,7]
 n = len(list1)
 for i in range(n):
@@ -33,3 +33,10 @@ for i in range(n):
         if list1[j] > list1[j+1]:
             list1[j], list1[j+1] = list1[j+1], list1[j]
 print('Sorted list : ', list1)
+
+
+# method 2
+for i in range(n-1, 0, -1):
+    for j in range(i):
+        if l1[j] > l1[j+1]:
+            l1[j], l1[j+1] = l1[j+1], l1[j]
