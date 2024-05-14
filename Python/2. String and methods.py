@@ -57,17 +57,58 @@ print('isspace    : ', first_name.isspace())   # only whtiespace?
 print('lstrip     : ', first_name.lstrip())    # remove whitespace of left side and will remove specific alphabets if entered as argument
 print('rstrip     : ', first_name.rstrip('i'))    # of right side and will remove specific alphabets if entered as argument
 print('strip      : ', first_name.strip('i'))     # remove space from l as well as right and will remove specific alphabets if entered as argument, dont remove from middle of string
-print("raj rishiiii".strip('i'))        # won't remove from middle
+print("'raj rishiii'.strip(i) :", "raj rishiiii".strip('i'))        # won't remove from middle
 print('replace(R,n): ', first_name.replace('R','n'))
-print('join       : ', '##'.join(first_name))    # given argument will iterate and the main sting will be repeated after it
+print("'Raj Rishi'.join(Hello)  :", 'Raj Rishi'.join('Hello'))      # given argument will iterate and the main sting will be repeated after it
 print('partition(a): ', first_name.partition('a'))    # split at the argument given and store in tuple
 print('split      : ', first_name.split())      # split and words and store in list
+print("'Raj Rishi Rana'.split('i') : ", 'Raj Rishi Rana'.split('i'))      # splits at the given arg
 
 print("==============================================")
 
+print('\n\n\n\n\n')
 
 
 
+#_______________________________________________________________________________
+
+
+print('CLASS 12th')
+print('\n\n')
+
+
+
+from string import *
+# this module conatains some important variable, such as :
+print(ascii_letters)
+print(ascii_lowercase)
+print(ascii_uppercase)
+print(digits)
+print(hexdigits)
+print(octdigits)
+print(punctuation)
+
+myname = '   raj      rishi     rana'
+print(capwords(myname))
+print(capwords.__doc__)
+
+
+"Creat a function my_capwords which will do the same job as the capwords function"
+def my_capwords(sentence, seperator=None):
+    #step 1: spliting
+    thelist = sentence.split(seperator)
+
+    #step 2: capitalizing
+    for i in range(len(thelist)):
+        thelist[i] = thelist[i].capitalize()
+
+    #step 3: join
+    final = seperator.join(thelist)
+
+
+    return final
+
+print(my_capwords('heLLow, my   nAme is  raj', "m"))
 
 
 
