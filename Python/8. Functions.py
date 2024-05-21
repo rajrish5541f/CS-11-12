@@ -1,5 +1,9 @@
-
-
+'''
+Functions: types of function (built-in functions, functions defined in module, user 
+defined  functions),  creating  user  defined  function,  arguments  and  parameters, 
+default  parameters,  positional  parameters,  function  returning  value(s),  flow  of 
+execution, scope of a variable (global scope, local scope) 
+'''
 
 def func(a,b):      # a,b are parameters or formal arguments/parameteres
     return a+b

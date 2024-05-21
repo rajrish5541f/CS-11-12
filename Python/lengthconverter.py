@@ -1,4 +1,3 @@
-'''lengthconverter.py'''
 '''Converts miles to kms and vice-versa, and converts inches to feet and  vice-versa. '''
 
 #functions
