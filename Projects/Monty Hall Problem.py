@@ -3,7 +3,7 @@ import random
 doors = [1,2,3]
 statistics = open(r'.\Projects\Monty Hall Problem.txt', 'a+')
 results = ['Changed and won.', 'Changed and lost.', "Didn't change and Won.", "Didn't change and Lost."]
-times = int(input("How many time you want to play?  "))
+times = int(input("How many time you want to play?\n  : "))
 n = times
 # print(statistics.readlines())
 def selecting_door():
@@ -38,38 +38,33 @@ def result():
     if my_selection == door_of_money: 
         if change_or_not == True:
             print(results[0])
-            statistics.write(results[0])
-            statistics.write("\n")
+            statistics.write('0')
         else:
             print(results[2])
-            statistics.write(results[2])
-            statistics.write("\n")
+            statistics.write('2')
     else: 
         if change_or_not == True:
             print(results[1])
-            statistics.write(results[1])
-            statistics.write("\n")
+            statistics.write('1')
         else:
             print(results[3])
-            statistics.write(results[3])
-            statistics.write("\n")
+            statistics.write('3')
 def analysis():
-    statistics.seek(0)
-    stats = statistics.readlines()
-    for i in range(len(stats)):
-        gg = stats[i]
-        stats[i] = gg[:-1]
+    pos = 0
     res0, res1, res2, res3 = 0, 0, 0, 0
-    for i in stats:
-        if i == results[0]: res0 += 1
-        elif i == results[1]: res1 += 1
-        elif i == results[2]: res2 += 1
+    while True:
+        statistics.seek(pos)
+        val = statistics.read(1)
+        if val == '':
+            break
+        elif val == '0': res0 += 1
+        elif val == '1': res1 += 1
+        elif val == '2': res2 += 1
         else: res3 += 1
-    print("\n\n")
-    print('Chances of winning if you change'+' : '+str(float(((res0+res3)/len(stats))*100))+' %')
-    print('Chances of winning if you stick'+'  : '+str(float(((res1+res2)/len(stats))*100))+' %')
-    # print(results[2]+' : '+str(float((res2/len(stats))*100))+' %')
-    # print(results[3]+' : '+str(float((res3/len(stats))*100))+' %')
+        pos += 1
+    print('Chances of winning if you change'+' : '+str(float(((res0+res3)/pos)*100))+' %')
+    print('Chances of winning if you stick'+'  : '+str(float(((res1+res2)/pos)*100))+' %')
+
     statistics.close()
 
 def the_game():

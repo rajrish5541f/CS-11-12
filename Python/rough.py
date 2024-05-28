@@ -1,2 +1,5 @@
-doors = [1,2,3,2]
-print(doors)
+gg = open(r"./Python/Resources/FH.txt")
+gg.seek(1)
+# g = gg.readlines()
+# print(g)
+print(gg.read(1))
