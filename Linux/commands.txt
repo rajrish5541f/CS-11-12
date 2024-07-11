@@ -1,0 +1,1 @@
+ls, ls -R, ls -a,  cd, mkdir, mv, cp, touch, touch .filename,  pwd, 
