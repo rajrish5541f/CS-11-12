@@ -47,7 +47,7 @@ print('count(i)   : ', first_name.count('i'))
 print('find(Rishi): ', first_name.find('Rishi'))
 print('index(i)   : ', first_name.index('i'))
 print('endswith(d): ', first_name.endswith('d'))
-print('startswith(i): ', first_name.startswith('r'))
+print('startswith(R): ', first_name.startswith('R'))
 print('isalnum    : ', first_name.isalnum())   # have only alphabets and numbers, not even white spaces
 print('isalpha    : ', first_name.isalpha())   # only aphabet
 print('isdigit    : ', first_name.isdigit())   # only digits
@@ -57,7 +57,7 @@ print('isspace    : ', first_name.isspace())   # only whtiespace?
 print('lstrip     : ', first_name.lstrip())    # remove whitespace of left side and will remove specific alphabets if entered as argument
 print('rstrip     : ', first_name.rstrip('i'))    # of right side and will remove specific alphabets if entered as argument
 print('strip      : ', first_name.strip('i'))     # remove space from l as well as right and will remove specific alphabets if entered as argument, dont remove from middle of string
-print("'raj rishiii'.strip(i) :", "raj rishiiii".strip('i'))        # won't remove from middle
+print("'   raj rishiii   '.strip(i) :", "   raj rishiiii    ".strip('i'))        # won't remove from middle
 print('replace(R,n): ', first_name.replace('R','n'))
 print("'Raj Rishi'.join(Hello)  :", 'Raj Rishi'.join('Hello'))      # given argument will iterate and the main sting will be repeated after it
 print('partition(a): ', first_name.partition('a'))    # split at the argument given and store in tuple
@@ -94,7 +94,7 @@ print(capwords.__doc__)
 
 
 "Creat a function my_capwords which will do the same job as the capwords function"
-def my_capwords(sentence, seperator=None):
+def my_capwords(sentence, seperator=' '):
     #step 1: spliting
     thelist = sentence.split(seperator)
 
@@ -108,7 +108,7 @@ def my_capwords(sentence, seperator=None):
 
     return final
 
-print(my_capwords('heLLow, my   nAme is  raj', "m"))
+print(my_capwords('heLLow, my   nAme is  raj'))
 
 
 
