@@ -35,7 +35,7 @@ print(next(readerobj))
 mycsv.close()
 
 # Writing CSV
-mycsvnew = open(r"./Python/Resources/FH.csv", 'a+', newline=' ')
+mycsvnew = open(r"./Python/Resources/FH.csv", 'a+', newline='')
 writedata = csv.writer(mycsvnew, delimiter=',')
 writedata.writerow(['Reyna',23,45])
 mycsvnew.seek(0)
