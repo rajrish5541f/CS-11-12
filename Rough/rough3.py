@@ -1,12 +1,8 @@
-m,x,k=[],[],[]
-a,b=input(),input()
-for i in range(int(a)):
-    for j in range(int(b[0])):
-        x.append(input())
-    m.append(x)
-for i in m:
-    for j in i:
-        for f in j.split('.'):
-            k.append(f)
-    print(len(max(k)))
-    k=[]
+def hcf(a,b):
+    while b:
+        a,b=b,a%b
+
+    print(a)
+hcf(14,35)
+print(2%3)
+print(3%2)
