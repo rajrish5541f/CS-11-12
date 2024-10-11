@@ -1,18 +1,10 @@
+from sympy import symbols, plot
 
-# import csv
-# fileh = open("passw.csv", 'w', newline='')
-# writerh = csv.writer(fileh, delimiter=',')
-# readerh = csv.reader(fileh)
-# def writingPass():
-#     writerh.writerow(['UserID','Password'])
-#     ent = input("Welcome!\nHow many entries: ")
-#     for i in range(int(ent)):
-#         uid = input("Enter userID : ")
-#         passw = input("Enter password : ")
-#         writerh.writerow([uid, passw])
-#     print("Writing entries successfull!")
-#     fileh.close()
+# Define the symbol and function
+x = symbols('x')
+expr = x**(1/2)
 
+<<<<<<< HEAD
 
 # def readingPass():
 #     uID=input("Enter uID to retrieve pass : ")
@@ -49,3 +41,7 @@ def displaywords():
             if len(i)>4:
                 print(i)
 displaywords()
+=======
+# Plot the function
+plot(expr)
+>>>>>>> bb607f1fa8ab42a7747a907daad9b80e0413a9a0

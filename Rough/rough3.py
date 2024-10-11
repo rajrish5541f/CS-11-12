@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #create useable bounded stack
 stack=[]
 def push(x):
@@ -25,3 +26,13 @@ while True:
         print('Code execution successful')
     else:
         print('invalid command!')
+=======
+def hcf(a,b):
+    while b:
+        a,b=b,a%b
+
+    print(a)
+hcf(14,35)
+print(2%3)
+print(3%2)
+>>>>>>> bb607f1fa8ab42a7747a907daad9b80e0413a9a0
