@@ -1,4 +1,4 @@
-420, 200
+
 x=50
 def alpha(num1):
     global x

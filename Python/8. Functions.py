@@ -33,8 +33,8 @@ interest(1000, rate = 0.12, time=4)        # here 1000 is the positional argumen
 interest(1000, time=2, 0.15)
 
 def sum(a,b,c):
-    return a+b+c
-    print("sum:", a+b+c)    # anything written after return will not get executed
+    return a+b+c                # anything written after return will not get executed
+    print("sum:", a+b+c)        # this will not execute
 
 # functions which return nothing are called Void Functions
 # function can return multiple values, those values will be returned in for of tuple :
