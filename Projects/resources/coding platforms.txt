@@ -1,0 +1,12 @@
+Beginner:
+    Hackerrank
+    Hackerearth
+    GeeksforGeeks
+
+Placement/interview preparation:
+    leetcode
+    InterviewBit
+    
+Competitive programming:
+    Codeforces
+    Codechef

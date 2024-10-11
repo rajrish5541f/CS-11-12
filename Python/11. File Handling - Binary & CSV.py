@@ -54,5 +54,6 @@ for i in csv.reader(mycsvnew, delimiter=','):
 
 
 # write a method DISPLAYWORDS() in python to read lines from a text file  and display the words whose length is less than 4
-def displaywords(filename:str):
-    [print(j) for i in open(filename) for j in i.split[0:-1] if j>4]
+def displaywords(x=input("Enter file name: ")):
+    [print(j) for i in open(x) for j in i[0:-1].split() if len(j)>4]
+displaywords()

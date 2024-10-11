@@ -1,0 +1,1 @@
+https://unix.stackexchange.com/questions/757379/kali-nethunter-installation-error-on-android-using-termux-404-not-found

@@ -40,5 +40,12 @@
 # root.mainloop()
 
 
-f1 = open('./Python/raj.txt', 'r')
-print(type(f1.read()))
+def displaywords():
+    f= open(r'./Rough/txt_rough0.txt')
+    while a:
+        a = f.readline()
+        l = a.split()
+        for i in l:
+            if len(i)>4:
+                print(i)
+displaywords()
