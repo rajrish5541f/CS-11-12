@@ -1,5 +1,11 @@
-f1=open(r'./Rough/txt_rough0.txt', 'w+')
+import mysql.connector as ml
 
-f1.write('hello')
-f1.writelines(['maa', 'chuda'])
-print(f1.read())
+cn = ml.connect(host='localhost', user='root', passwd='1234')
+curr = cn.cursor()
+
+curr.execute('show databases;')
+print(curr.fetchall())
+
+curr.execute('use sakila; show tables;')
+print(curr.fetchall())
+
