@@ -1,5 +1,7 @@
-y = "2x"
+y = "x^2"
 y = y.replace('x', "(1)")
-y = eval(y)
-print(y)
+print(y, type(y), (1)^2)
+q = eval(y)
+print(eval(y), eval("(1)^2"), float(2)^2)
+print(q)
 

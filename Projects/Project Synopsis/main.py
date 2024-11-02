@@ -209,11 +209,9 @@ start()
 
 root.mainloop()
 
-
-
-
 '''
 @Credits:
     ● RAJ RISHI RANA aka rajrish5541f
     ● SATYAM KUMAR
 '''
+
