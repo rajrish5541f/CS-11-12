@@ -152,7 +152,7 @@ def fetch_clms():
     all_clms = curr.fetchall()
     desirable = ['int', 'decimal', 'numeric', 'float', 'double']
 
-    # useable_clms is a list of only those column names which can be plotted, i.e which are numeric
+    # useable_clms is a list of only those column names which can be plotted, i.e. which are numeric
     useable_clms=[]
     for i in desirable:
         for j in all_clms:

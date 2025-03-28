@@ -6,8 +6,4 @@ Have a good day
 How're you?
 I'm fine.
 Wbu?
-Have a good day
-How're you?
-I'm fine.
-Wbu?
-p
+d

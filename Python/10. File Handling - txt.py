@@ -1,9 +1,9 @@
-myfile = open(r".\Python\Resources\FH.txt", 'r+')
+myfile = open(r"Resources\FH.txt", 'r+')
 print(myfile.read())
 
 ###################################################################
 myfile.seek(0)
-print(myfile.readline())    # reads a single line; delimiter i.e. the \n at the end of the line is included
+print(x:=myfile.readline())    # reads a single line; delimiter i.e. the \n at the end of the line is included
 print(myfile.readline(2))
 print(myfile.readline(5))
 
